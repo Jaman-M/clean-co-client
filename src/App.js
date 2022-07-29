@@ -10,11 +10,21 @@ import { publicRoute } from './routes/publicRoutes';
 
 // uporer comment kora import gulo publicRoutes er moddhe move kora holo
 
+// for aos animation link here
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 
 function App() {
+
+  useEffect (() =>{
+    AOS.init();
+  }, []);
+
   return (
     <div >  
       <Navbar>
